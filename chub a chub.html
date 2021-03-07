@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<div style="padding-left: 00px;" style="padding-bottom: 500px;">
+  <p>
+      <a href="vending machine.html">
+       <img src="Home.jpeg" width="100px" height="80px">
+      </a>
+     </p>
+  </div>
+<img width="500px" height="500px" style="padding-left: 500px;"   src="chub a chub.jpeg">
+<p style="padding-left: 500px;">Chupa Chups (Spanish pronunciation: [ˈtʃupa ˈtʃups]) is a Spanish brand of lollipop and other confectionery<br>
+    which is sold in over 150 countries around the world.<br>
+    The name of the brand comes from the Spanish verb chupar, meaning "to suck".</p>
+    <br>
+    <br>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/9119/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+</head>
+<body>
+<form id="myForm">
+    <p>Please add [CAC] infront of your name</p>
+    <label>Name</label>
+    <br/>
+    <input name="full_name" />
+    <br/>
+    <label>Amount</label>
+    <br/>
+    <input type="number" name="amount" />
+    <br>
+    <label>Date</label>
+    <br>
+    <input type="date"  name="date" />
+    <br>
+     </form>
+  <button onclick="SubForm()">Submit</button>
+</body>
+</html>
+<script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous">
+</script>
+</html>

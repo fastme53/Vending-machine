@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<div style="padding-left: 00px;" style="padding-bottom: 500px;">
+  <p>
+      <a href="vending machine.html">
+       <img src="Home.jpeg" width="100px" height="80px">
+      </a>
+     </p>
+  </div>
+<img width="500px" height="500px" style="padding-left: 500px;"   src="Sour Raisins.jpeg">
+<p style="padding-left: 500px;">
+  They’re fruit snacks made the way nature intended. <br>
+    started with sweet & golden whole raisins. <br>
+    Then, simply added a little sour pucker of natural fruit flavoring from other natural flavors — that’s it!</p>
+    <br>
+    <br>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/9119/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+</head>
+<body>
+<form id="myForm">
+  <p>Please add [RSN] infront of your name</p>
+    <label>Full Name</label>
+    <br/>
+    <input name="full_name" />
+    <br/>
+    <label>Amount</label>
+    <br/>
+    <input max="5" type="number" name="amount" />
+    <br>
+    <label>Date</label>
+    <br>
+    <input type="date"  name="date" />
+    <br>
+     </form>
+  <button onclick="SubForm()">Submit</button>
+</body>
+</html>
+<script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous">
+</script>
+</html>
