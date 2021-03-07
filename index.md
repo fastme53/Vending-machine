@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon"/>
-    <title>Tarquins vending machine</title>
     <link rel="stylesheet" href="style side bar.css">
-    <style>
-html{
-background-color: #1ed37e;
-}
-    </style>
+   
 
-    <!-- Main div -->
-    <div class="main div" style="color: white;">
+
 <h1>Welcome to Tarquins vending machine</h1>
 <p>Were you can get your snacks<br></p>
     </div>
